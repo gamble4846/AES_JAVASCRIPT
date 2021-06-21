@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <title>AES JAVASCRIPT</title>
+</head>
+<body class="container">
+    <br>
+    <br>
+    <div ng-app="app">
+        <div ng-controller="MyController">
+            <textarea id="INPUTDATA" rows="4" cols="50" class="form-control" ng-model="INPUTDATA" placeholder="Enter DATA"></textarea><br>
+            <input type="text" class="form-control" ng-model="KEY" id="KEY" placeholder="Enter KEY"><br>
+            <button ng-click='ENCRYPT()' class="btn btn-success">ENCRYPT DATA</button>
+            <button ng-click='DECRYPT()' class="btn btn-danger">DECRYPT DATA</button><br><br>
+            <textarea id="OUTPUTDATA" rows="4" cols="50" class="form-control" ng-model="OUTPUTDATA" readonly></textarea><br>
+
+            <table class="table" border="1">
+                <tr>
+                    <td>InputString</td>
+                    <td><input type="text" class="form-control" ng-model="InputString" readonly></td>
+                </tr>
+                <tr>
+                    <td>Devided_ARR</td>
+                    <td><input type="text" class="form-control" ng-model="Devided_ARR" readonly></td>
+                </tr>
+                <tr>
+                    <td>Converted_ARR</td>
+                    <td><input type="text" class="form-control" ng-model="Converted_ARR" readonly></td>
+                </tr>
+                <tr>
+                    <td>SubBytes_Mat</td>
+                    <td><input type="text" class="form-control" ng-model="SubBytes_Mat" readonly></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="JS/angular.js"></script>
+    <script src="JS/AES_JAVASCRIPT.js"></script>
+</body>
+</html>
